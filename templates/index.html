@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+  <div class="jumbotron">
+    <h1>Сокращатель ссылок</h1>
+    <p>Короткая ссылка за 2 шага</p>
+  </div>
+  <div class="row">
+    <form method='get' action='/set'>
+    <div class="col-sm-9 col-sm-offset-1">
+        <div class="form-group">
+            <input type="text" class="form-control" id="href" name='href' placeholder="Введите ссылку">
+        </div>
+    </div>
+    <div class="col-sm-2">
+      <input class="btn btn-default" type="submit" value="Вперед!">
+    </div>
+    </form>
+  </div>
+</div>
+{% endblock %}
+

@@ -1,0 +1,4 @@
+REDIS_HOST = 'localhost'
+REDIS_PORT = 6379
+
+CODE_LENGTH = 6
