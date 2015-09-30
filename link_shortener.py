@@ -38,12 +38,7 @@ def set_code():
         code = get_random_code()
         if r.setnx(code, request.args.get('href')):
             break
-#    while True:
-#        code = get_random_code()
-#        if r.get(code) is None:
-#            break
 
-#    r.set(code, request.args.get('href'))
     return render_template(
         'set.html',
         url=request.args.get('href'),
